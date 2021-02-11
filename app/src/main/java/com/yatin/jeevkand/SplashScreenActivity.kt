@@ -1,10 +1,8 @@
 package com.yatin.jeevkand
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButton
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -12,10 +10,16 @@ class SplashScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        val prastar1BTN: MaterialButton = findViewById(R.id.prastar1BTN)
-        val prastar2BTN: MaterialButton = findViewById(R.id.prastar2BTN)
+        val nashtPrastar1BTN: MaterialButton = findViewById(R.id.nashtPrastar1BTN)
+        val nashtPrastar2BTN: MaterialButton = findViewById(R.id.nashtPrastar2BTN)
+        val samudishtPrastar1BTN: MaterialButton = findViewById(R.id.samudishtPrastar1BTN)
+        val samudishtPrastar2BTN: MaterialButton = findViewById(R.id.samudishtPrastar2BTN)
 
-        prastar1BTN.setOnClickListener {startActivity(Intent(this, MainActivity::class.java).putExtra("key","prastar1"))}
-        prastar2BTN.setOnClickListener {startActivity(Intent(this, MainActivity::class.java).putExtra("key","prastar2"))}
+        nashtPrastar1BTN.setOnClickListener { startActivity(Intent(this, NashtActivity::class.java).putExtra("key", "prastar1")) }
+        nashtPrastar2BTN.setOnClickListener { startActivity(Intent(this, NashtActivity::class.java).putExtra("key", "prastar2")) }
+
+        samudishtPrastar1BTN.setOnClickListener { startActivity(Intent(this, SamudishtActivity::class.java).putExtra("key", "prastar1")) }
+        samudishtPrastar2BTN.setOnClickListener { startActivity(Intent(this, SamudishtActivity::class.java).putExtra("key", "prastar2")) }
+
     }
 }

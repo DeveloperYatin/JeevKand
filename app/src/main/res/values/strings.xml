@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">जीवकांड</string>
 
-    <string name="प्रस्तार1">प्रस्तार 1</string>
-    <string name="प्रस्तार2">प्रस्तार 2</string>
+    <string name="नष्ट">नष्ट</string>
+    <string name="समुदिष्ट">समुदिष्ट</string>
+    <!--<string name="स्नेह">स्नेह</string>-->
+
+    <string name="प्रस्तार1">प्रस्तार 1 \n (20x4 = 80)</string>
+    <string name="प्रस्तार2">प्रस्तार 2 \n (16x5 = 80)</string>
 
     <string-array name="विकथा">
         <item>स्त्री कथा</item>
@@ -30,6 +34,7 @@
     <string name="स्नेह">स्नेह</string>
 
     <string name="enter_some_number_here">Enter no. 0 to 80</string>
+    <string name="output">Output</string>
 
     <string-array name="प्रास्तार1">
         <item>स्त्री कथा,क्रोध,स्पर्शन,निद्रा,स्नेह</item>
